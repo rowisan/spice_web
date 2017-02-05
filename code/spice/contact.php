@@ -1,14 +1,14 @@
 <!-- Contact style-->
 <section class="container clearfix common-pad booknow">
-    <div class="sec-header3">
-        <h2>Send a message</h2>
+    <div class="contact">
+        <h2>Send a Message</h2>
     </div> 
 
     <div class="row nasir-contact">
         <div class="col-md-8">
 
             <div class="book-left-content input_form">
-                <form action="http://demos.pixelatethemes.com/resort/contact_process.php" method="post" id="contactForm">         
+                <form method="POST" action="<?php echo $host; ?>admin/contact_process.php" class="contact-form">
                     <div class="row">   
                         <div class="col-lg-6 col-md-6 col-sm-12 m0 col-xs-12">
                             <span>Your Name</span>
@@ -35,8 +35,16 @@
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><button type="submit" class="res-btn">Submit Now</button></div>
                     </div>
                 </form>
-                <div id="success"><p>Your message sent successfully.</p></div>
-                <div id="error"><p>Something is wrong. Message cant be sent!</p></div>
+                <?php
+                if(isset($_GET['msg'])){
+                    if($_GET['msg'] == 'SUCCESS'){?>
+                        <div id="success"><p>Your message sent successfully.</p></div>
+                    <?php } else {?>
+                        <div id="error"><p>Something is wrong. Message cant be sent!</p></div>
+                        <?php
+                    }
+                }
+                ?>
             </div>
 
 
@@ -52,7 +60,7 @@
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                     </div>
                     <div class="media-contact-info">
-                        <p><?php echo $companyName.' '.$companyAddress; ?></p>
+                        <p><?php echo $companyName.', <br> '. $companyAddressWlb; ?></p>
                     </div>
                 </div>   
                 <div class="media-contact clearfix">
@@ -65,8 +73,7 @@
                             <a href="mailto:<?php echo $supportEmail; ?>"><?php echo $supportEmail; ?></a>
                         </p>
                     </div>
-                </div> 
-
+                </div>
                 <div class="media-contact clearfix">
                     <div class="media-contact-icon">
                         <i class="fa fa-phone" aria-hidden="true"></i>
@@ -77,15 +84,16 @@
                     </div>
                 </div> 
 
+                <?php for($i = 1; $i <= 1; $i++){
+                    ?>
                 <hr>
-                <h4 class="contact-sub">Dilshard Disanayake</h4>
+                <h4 class="contact-sub"><?php echo ${'contactName' . $i}; ?></h4>
                 <div class="media-contact clearfix">
                     <div class="media-contact-icon">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                     </div>
                     <div class="media-contact-info">
-                        <p>Spice Lanka
-                            No 152, Kandy, Central, Sri Lanka. </p>
+                        <p><?php echo ${'contactAddressWlb'.$i}; ?></p>
                     </div>
                 </div>   
                 <div class="media-contact clearfix">
@@ -94,8 +102,7 @@
                     </div>
                     <div class="media-contact-info">
                         <p>
-                            <a href="mailto:<?php echo $infoEmail; ?>"><?php echo $infoEmail; ?></a><br>
-                            <a href="mailto:<?php echo $supportEmail; ?>"><?php echo $supportEmail; ?></a>
+                            <a href="mailto:<?php echo ${'contactEmail'.$i}; ?>"><?php echo ${'contactEmail'.$i}; ?></a>
                         </p>
                     </div>
                 </div> 
@@ -105,12 +112,12 @@
                         <i class="fa fa-phone" aria-hidden="true"></i>
                     </div>
                     <div class="media-contact-info">
-                        <p>+ 94 812 123 456</p>
-                        <p>+ 94 812 123 457</p>
+                        <p><?php echo ${'contactTel1'.$i}; ?></p>
+                        <p><?php echo ${'contactTel2'.$i}; ?></p>
                     </div>
                 </div> 
             </div>
-
+<?php } ?>
 
 
         </div>  

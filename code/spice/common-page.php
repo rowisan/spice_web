@@ -57,20 +57,20 @@ if (isset($_GET['error'])) {
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="<?php echo $host; ?>css/bootstrap.min.css" rel="stylesheet">
+        <link href="<?php echo $host; ?>css/font-awesome.min.css" rel="stylesheet">
         <!-- strock gap icons -->
-        <link rel="stylesheet" href="vendors/Stroke-Gap-Icons-Webfont/style.css">
-        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="<?php echo $host; ?>vendors/Stroke-Gap-Icons-Webfont/style.css">
+        <link rel="stylesheet" href="<?php echo $host; ?>css/animate.min.css">
 
         <!--    owl-carousel-->
-        <link rel="stylesheet" href="vendors/owlcarousel/owl.carousel.css"> 
-        <link rel="stylesheet" href="vendors/jquery-ui-1.11.4/jquery-ui.min.css">
+        <link rel="stylesheet" href="<?php echo $host; ?>vendors/owlcarousel/owl.carousel.css">
+        <link rel="stylesheet" href="<?php echo $host; ?>vendors/jquery-ui-1.11.4/jquery-ui.min.css">
 
         <!-- Main Css  -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="stylesheet" href="<?php echo $host; ?>css/style.css">
+        <link rel="stylesheet" href="<?php echo $host; ?>css/responsive.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $host; ?>favicon/favicon-16x16.png">
 
     </head>
     <body>
@@ -88,21 +88,21 @@ if (isset($_GET['error'])) {
         <?php include('footer.php'); ?>
 
 
-        <script src="js/jquery-2.2.4.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+        <script src="<?php echo $host; ?>js/jquery-2.2.4.min.js"></script>
+        <script src="<?php echo $host; ?>js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="<?php echo $host; ?>js/jquery.bxslider.js"></script>
         <!-- owl carousel  -->   
-        <script src="vendors/owlcarousel/owl.carousel.min.js"></script>
-        <script src="js/jquery.easing.min.js"></script>
-        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-        <script src="js/zebra_datepicker.js"></script>
-        <script src="js/jquery.form.js"></script>
-        <script src="js/jquery.validate.min.js"></script><!-- jQuery ui js -->
-        <script src="js/jquery.mixitup.min.js"></script>
-        <script src="js/jquery.fancybox.pack.js"></script>
-        <script src="vendors/jquery-ui-1.11.4/jquery-ui.min.js"></script>
-        <script src="js/contact.js"></script> 
-        <script src="js/custom.js"></script>
+        <script src="<?php echo $host; ?>vendors/owlcarousel/owl.carousel.min.js"></script>
+        <script src="<?php echo $host; ?>js/jquery.easing.min.js"></script>
+        <script src="<?php echo $host; ?>js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="<?php echo $host; ?>js/zebra_datepicker.js"></script>
+        <script src="<?php echo $host; ?>js/jquery.form.js"></script>
+        <script src="<?php echo $host; ?>js/jquery.validate.min.js"></script><!-- jQuery ui js -->
+        <script src="<?php echo $host; ?>js/jquery.mixitup.min.js"></script>
+        <script src="<?php echo $host; ?>js/jquery.fancybox.pack.js"></script>
+        <script src="<?php echo $host; ?>vendors/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+        <script src="<?php echo $host; ?>js/contact.js"></script>
+        <script src="<?php echo $host; ?>js/custom.js"></script>
         <script>
             $(window).scroll(function () {
 

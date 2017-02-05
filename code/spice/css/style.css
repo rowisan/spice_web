@@ -1271,14 +1271,27 @@ header {
     margin-bottom:35px;
 }
 
+.contact {
+    position: relative;
+    margin-bottom:35px;
+}
+
+
 .sec-header3 h2 {
-    color: #222222; 
+    color: #222222;
     font-weight: bold!important;
     margin: 0;
     padding: 0;
     text-transform: capitalize;
 }
 
+ .contact h2 {
+    color: #222222;
+    font-weight: bold!important;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+}
 .sec-header3 h3 {
     color: #999;
     font: 400 1.15em/1.8em 'Lato', sans-serif;
@@ -4244,7 +4257,7 @@ blockquote footer a {
 }
 
 .input_form #success {
-    color: #779F2D;
+    color: #B4FE65;
 }
 
 .input_form #success p, .input_form #error p {
@@ -4265,7 +4278,7 @@ blockquote footer a {
     left: 0;
     bottom: -15px;
     background: rgba(0, 0, 0, 0.5);
-    display: none;
+    /*display: none;*/
 }
 
 .input_form form .form-control.error + .error {

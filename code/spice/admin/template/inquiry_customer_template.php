@@ -96,7 +96,7 @@ $dateSubmitted = date("Y-m-d H:i:s");
                                     <table width='100%' cellpadding='0' cellspacing='0' style='box-sizing: border-box; font-size: 15px; margin: 0;'>
                                         <tr style='margin: 0;'>
                                             <td class='content-block' style='vertical-align: top; margin: 0; padding: 0 0 20px;' valign='top'>
-                                                Hi <strong style='margin: 0;'><?php echo $customer; ?></strong> Your inquiry has placed.
+                                                Hi <strong style='margin: 0;'><?php echo $custemer; ?>,</strong> Greetings from Essential Spice Exports.
                                             </td>
                                         </tr>
                                         <tr style='margin: 0;'>
@@ -112,7 +112,9 @@ $dateSubmitted = date("Y-m-d H:i:s");
                                                             <p style='margin: 0;'>Date submitted : <?php echo $dateSubmitted; ?></p>
                                                             <p style='float: left;'>
                                                                 <br>
-                                                                     Your inquiry has placed, Our agent will contact you as soon as possible.
+                                                                We have received you request and one of our staff will attend to your inquiry at our earliest.<br>
+                                                                Thank you for contacting <?php echo $companyName?>.<br>
+                                                                Have a Nice day!!!
                                                             </p>
                                                         </td>
                                                     </tr>

@@ -9,7 +9,7 @@ ini_set("password", $password);
 $headers .= "Content-Transfer-Encoding: 7bit" . "\r\n";
 
 $to = $email;
-$subject = $companyName . " Inquiry - " . $itemCode;
+$subject = $mailSubject;
 ob_start();
 include ($template);
 $body = ob_get_clean();

@@ -5,5 +5,5 @@ RewriteRule ^(contact)/?$ common-page.php [NC]
 RewriteRule ^(history)/?$ common-page.php [NC]
 RewriteRule ^(login)/?$ index.html [NC]
 
-ErrorDocument 404 /www/spice_new/common-page.php?error=404
-ErrorDocument 500 /www/spice_new/common-page.php?error=500
+ErrorDocument 404 /www/spice/common-page.php?error=404
+ErrorDocument 500 /www/spice/common-page.php?error=500

@@ -10,6 +10,7 @@ $customerEmail = $email;
 $message = $_POST['message'];
 $itemCode = $_POST['itemCode'];
 $itemName = $_POST['itemName'];
+$mailSubject = $companyName . " Inquiry - " . $itemCode;
 $inquiryId = '';
 $msg = '';
 
@@ -17,7 +18,6 @@ $sql = "INSERT INTO `inquiry` (`item_code`, `customer_name`, `phone`, `email`, `
 
 if (mysqli_query($db, $sql)) {
     $inquiryId = '#'.mysqli_insert_id($db);
-
     //Mail to client
     $template = 'template/inquiry_customer_template.php';
     include 'mail.php';
@@ -30,7 +30,7 @@ if (mysqli_query($db, $sql)) {
 
     if ($clientMail == 1 || $officerMail == 1) {
         $clientMailStatus = 'P';
-        $$officerMailStatus = 'P';
+        $officerMailStatus = 'P';
         if ($clientMail == 1) {
             $clientMailStatus = 'I';
         }

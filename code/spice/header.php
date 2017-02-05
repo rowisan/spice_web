@@ -18,10 +18,10 @@
         <div class="pull-right right-infos link-list">
             <ul class="list-inline">
                 <li>
-                    <a href="contact">Login</a>
+                    <a href="<?php echo $host; ?>contact">Login</a>
                 </li><!-- comment for inline hack
                 --><li>
-                    <a href="contact">Registration</a>
+                    <a href="<?php echo $host; ?>contact">Registration</a>
                 </li>
             </ul>
         </div><!-- /.pull-right right-infos link-list -->
@@ -29,8 +29,8 @@
 </section><!-- /.top-bar -->
 <div class="container">
     <div class="navbar-header-img">
-        <a href="home" class="navbar-brand">
-            <img alt="Awesome Image" src="images/header/logo2.png">
+        <a href="<?php echo $host; ?>home" class="navbar-brand">
+            <img alt="Awesome Image" src="<?php echo $host; ?>images/header/logo2.png">
         </a>
     </div>
 
@@ -44,26 +44,26 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="home" class="navbar-brand">
-                <img alt="Awesome Image" src="images/header/logo2.png">
+            <a href="<?php echo $host; ?>home" class="navbar-brand">
+                <img alt="Awesome Image" src="<?php echo $host; ?>images/header/logo2.png">
             </a>
         </div>
 
         <div class="collapse navbar-collapse" id="main-navigation">
             <ul class="nav navbar-nav ">
-                <li><a href="home" >Home</a>
+                <li><a href="<?php echo $host; ?>home" >Home</a>
                 </li>
-                <li><a href="aboutus" >About Us</a>
+                <li><a href="<?php echo $host; ?>aboutus" >About Us</a>
                 </li>
-                <li><a href="history" >History</a>
+                <li><a href="<?php echo $host; ?>history" >History</a>
                 </li>
                 <li>
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Products <span class="glyphicon glyphicon-chevron-down"></span></a>
+                    <a href="<?php echo $host; ?>#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Products <span class="glyphicon glyphicon-chevron-down"></span></a>
                     <ul class="dropdown-submenu dropdown-menu">
                         <?php
                         foreach ($productList as $value) {
                             ?>
-                            <li><a href="<?php echo $value; ?>" >
+                            <li><a href="<?php echo $host . $value; ?>" >
                                     <?php echo str_replace("_", " ", $value); ?>
                                 </a>
                             </li>
@@ -72,7 +72,7 @@
                         ?>
                     </ul>
                 </li>
-                <li><a href="contact" >Contact us</a></li>
+                <li><a href="<?php echo $host; ?>contact" >Contact us</a></li>
             </ul>
 
         </div>

@@ -37,7 +37,7 @@ parse_str($query);
     <div class="row rest-pad">
         <div class="pull-right col-lg-4 col-md-4 col-xs-12">
             <div class="book-r-form">
-                <img src="images/products/<?php echo $item; ?>/1.jpg" alt="" class="img-responsive">
+                <img src="<?php echo $host; ?>images/products/<?php echo $item; ?>/1.jpg" alt="" class="img-responsive">
                 <div class="product-intro">
                     <h5><?php echo $name . ' ' . $customerName; ?></h5>
                     <!-- Product Overview style-->

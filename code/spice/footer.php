@@ -6,7 +6,7 @@
         <section class="container clearfix footer-pad">   
 
             <div class="widget about-us-widget col-md-4 col-sm-6">
-                <a href="home"><img src="images/footer/logo.png" alt="" class="img-responsive"></a>
+                <a href="home"><img src="<?php echo $host; ?>images/footer/logo.png" alt="" class="img-responsive"></a>
 
                 <p>It's actually a look in to our history. Long before Ceylon became famed as the land of tea...</p>
                 <a href="aboutus">Read More <i class="fa fa-angle-double-right"></i></a>
@@ -59,7 +59,7 @@
                         <li>
                             <i class="fa fa-map-marker"></i>
                             <div class="fleft location_address">
-                                <b><?php echo $companyName; ?></b><br><?php echo $companyAddress; ?>
+                                <b><?php echo $companyName; ?></b><br><?php echo $companyAddressWlb; ?>
                             </div>
 
                         </li>

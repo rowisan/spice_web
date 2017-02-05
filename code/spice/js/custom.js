@@ -255,7 +255,7 @@ Select drop down
             margin: 10,
             items: 1,
              dots:true,
-            responsive: true,
+           // responsive: true,
 			responsive:{
 				0:{
 					items:1
